@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Background -->
+    <div id="stars"></div>
+
+    <div id="balloons"></div>
+
+    <canvas id="confetti"></canvas>
+
+
+    <!-- MUSIC -->
+
+    <audio id="song" loop></audio>
+
+    <button id="musicBtn" class="music-btn">
+
+        🎵
+
+    </button>
+
+
+    <!-- SCREEN 1 : GIFT -->
+
+    <section id="intro" class="screen active">
+
+        <p class="intro-text">
+
+            A little surprise for
+            <span class="js-name"></span>
+            ❤️
+
+        </p>
+
+
+        <button id="giftBtn" class="gift">
+
+            <span class="gift-box"></span>
+
+            <span class="gift-lid"></span>
+
+            <span class="bow"></span>
+
+        </button>
+
+
+        <p class="hint">
+
+            Tap the gift 🎁
+
+        </p>
+
+    </section>
+
+
+
+    <!-- SCREEN 2 : BIRTHDAY -->
+
+    <section id="party" class="screen">
+
+        <!-- Birthday title -->
+
+        <h1 id="title" class="title"></h1>
+
+
+        <!-- Age -->
+
+        <p id="ageLine" class="age-line"></p>
+
+
+        <!-- Photo + Cake -->
+
+        <div class="stage">
+
+
+            <!-- PHOTO -->
+
+            <div id="photoWrap" class="photo-wrap">
+
+                <img id="photo"
+                     src=""
+                     alt="Birthday Photo">
+
+                <div id="photoFallback"
+                     class="photo-fallback">
+
+                </div>
+
+            </div>
+
+
+            <!-- CAKE -->
+
+            <div>
+
+                <div id="cake"
+                     class="cake">
+
+
+                    <!-- Plate -->
+
+                    <span class="plate"></span>
+
+
+                    <!-- Cake layers -->
+
+                    <span class="layer layer-bottom"></span>
+
+                    <span class="layer layer-mid"></span>
+
+                    <span class="layer layer-top"></span>
+
+
+                    <!-- Candles -->
+
+                    <div id="candles"
+                         class="candles">
+
+                    </div>
+
+                </div>
+
+
+                <p id="cakeHint"
+                   class="hint">
+
+                    Make a wish, then tap the cake 🎂
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MESSAGE -->
+
+        <div id="messageCard"
+             class="message-card">
+
+            <p id="message"></p>
+
+            <p id="signature"
+               class="signature">
+
+            </p>
+
+        </div>
+
+
+        <!-- REPLAY -->
+
+        <button id="replayBtn"
+                class="btn">
+
+            🎁 Replay
+
+        </button>
+
+    </section>
+
+
+    <!-- Your JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
